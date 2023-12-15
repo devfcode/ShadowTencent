@@ -56,7 +56,6 @@ public class PluginManagerImpl {
             Method addAssetPath = AssetManager.class.getMethod("addAssetPath", String.class);
             addAssetPath.invoke(assetManager, path);
 
-            // resources 赋值
             resources = new Resources(assetManager,
                     context.getResources().getDisplayMetrics(),
                     context.getResources().getConfiguration());
@@ -65,5 +64,4 @@ public class PluginManagerImpl {
             throw new RuntimeException(e);
         }
     }
-
 }
