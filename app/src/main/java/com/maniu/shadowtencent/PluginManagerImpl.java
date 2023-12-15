@@ -42,6 +42,12 @@ public class PluginManagerImpl {
     public void loadPath(String path) {
         // dexClassLoader 赋值
         File dexOutFile = context.getDir("dex", Context.MODE_PRIVATE);
+
+//        ClassLoader baseParent = ClassLoader.getSystemClassLoader().getParent();
+//        dexClassLoader = new DexClassLoader(path,
+//                dexOutFile.getAbsolutePath(),
+//                null,
+//                baseParent);
         dexClassLoader = new DexClassLoader(path,
                 dexOutFile.getAbsolutePath(),
                 null,

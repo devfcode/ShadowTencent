@@ -53,9 +53,10 @@ public class MainActivity extends AppCompatActivity {
 
     public void load(View view) {
         String filesDir = this.getCacheDir().getAbsolutePath();
-        String apkPath = filesDir + File.separator + "plugina.apk";
-//        String apkPath = filesDir + File.separator + "checkenv.apk";
-        Log.i(TAG, apkPath + "\tfileexist:" + new File(apkPath).exists());
+//        String apkPath = filesDir + File.separator + "plugina.apk";
+        String apkPath = filesDir + File.separator + "checkenv.apk";
+//        String apkPath = filesDir + File.separator + "test.apk";
+        Log.i(TAG, apkPath + "\texist:" + new File(apkPath).exists());
 
         // 加载 apk 文件
         PluginManagerImpl.getInstance().loadPath(apkPath);

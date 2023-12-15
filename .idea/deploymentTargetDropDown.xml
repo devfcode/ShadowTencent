@@ -5,6 +5,9 @@
       <entry key="app">
         <State />
       </entry>
+      <entry key="lifecycler">
+        <State />
+      </entry>
       <entry key="plugina">
         <State />
       </entry>

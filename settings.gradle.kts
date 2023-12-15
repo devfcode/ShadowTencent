@@ -16,4 +16,3 @@ dependencyResolutionManagement {
 rootProject.name = "ShadowTencent"
 include(":app")
 include(":plugina")
-include(":lifecycler")
